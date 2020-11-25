@@ -5,13 +5,12 @@ from requests.compat import quote_plus
 from . import models
 
 # Create your views here.
-BASE_CRAIGSLIST_URL = 'https://losangeles.craigslist.org/search/?query={}'
+BASE_CRAIGSLIST_URL = 'https://lucknow.craigslist.org/search/?query={}'
 BASE_IMAGE_URL = 'https://images.craigslist.org/{}_300x300.jpg'
 
 
 def home(request):
     return render(request, 'base.html')
-
 
 def new_search(request):
     search = request.POST.get('search')
